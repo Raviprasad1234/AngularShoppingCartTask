@@ -12,4 +12,19 @@ export class CartComponent implements OnInit {
   ngOnInit() {
   }
 
+  ShoppingCartNum = 0;
+
+  shopingCartArr = [];
+
+  UpdateTheCart(products){
+
+    console.log("check P count " , products);
+
+    this.ShoppingCartNum = products;
+
+    this.shopingCartArr.push(products);
+
+    console.log("test Array", this.shopingCartArr)
+  }
+
 }

@@ -1,1 +1,40 @@
-<p>cart works!</p>
+
+
+
+
+
+
+
+  <div class="col-lg-12 ">
+    <div class="row cart-btn-class  ">
+        <div class="col-xs-12 col-sm-4 col-md-4 btn-group ">
+            <button class="btn btn-light btn-sx" type="button">
+                Shoping Cart
+          <span> ({{ShoppingCartNum}})</span>
+            </button>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 btn-group "  >
+            <button class="btn btn-light btn-xs" type="button">
+                Placed Orders
+          <span>(3) </span>
+            </button>
+        </div>
+        <div class="col-xs-12  col-sm-4 col-md-4 btn-group">
+            <button class="btn btn-light btn-xs" type="button">
+                Ready To Condfirm
+            </button>
+        </div>
+
+
+    </div>
+
+    <div  class="container">
+        <app-products  (productAddTocart)= "UpdateTheCart($event)"></app-products>
+    </div>
+  
+</div>
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+.each-item-class{
+    border: 1px solid #dad4d4;
+}
+.each-product-cls{
+    border: 1px solid #dad4d4;
+    padding: 10px;
+    margin: 10px;
+}
+
+.plus-btn{
+    padding: 0px;
+    margin: 0px;
+}
+
+.text-center-cls{
+    text-align: center !important;
+    align-items: center;
+    display: flex;
+
+}
+
+.prod-cls{
+   font-family: "Times New Roman", Times, serif ;color:rgb(14, 5, 5)
+
+}

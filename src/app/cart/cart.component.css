@@ -1,0 +1,21 @@
+
+
+
+.cart-btn-class{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+ 
+ 
+ 
+    color: #909090
+  
+}
+
+div.btn-group {
+    margin: 0 auto; 
+    text-align: center;
+    margin-bottom: 15px;
+}

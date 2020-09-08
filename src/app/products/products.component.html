@@ -1,1 +1,159 @@
-<p>products works!</p>
+
+
+
+
+
+
+
+
+
+<div class ="container  prod-cls">
+    <div class ="row mb-4">
+      <div class ="col-md-7 col-sm-7   ">
+          <div class="" style="margin:10px;">
+            <div class="row  each-product-cls" *ngFor="let p of productArr">
+
+                <div class="col-md-4">
+                        <img  class="rounded w-100" [src]="p.image" alt="">
+                </div>
+                <div class="col-md-4 product-name-cls">
+
+                        <p>{{p.pname}}</p>
+                        <p>CAS No. 13127-18-9  </p> 
+                        <p> Weight - 500 g </p>
+                        <p>Packs</p>
+                        <div class="row">
+                                <div class="btn-group  col-sm-6 ">
+                                        <button type="button" class="btn btn-light btn-sm  plus-btn" (click)="decreaseFromCart(p)">-</button>
+                                        <input type="text"  [(ngModel)]="p.itemCartVal"  class="text-center-cls" value="1"  disabled readonly class="w-25">
+                                        <button type="button" class="btn btn-light btn-sm plus-btn" (click)="AddToCart(p)">+</button>
+                                </div>
+                                <div class="col-sm-6" style="color: red"  (click) ="RemoveObj(p.pid)">
+                                        Remove
+                                </div>
+                             
+                        </div>
+                              
+                    </div>
+                <div  class="col-md-4"> 
+                    <div  class="row">
+                    <div  class="col-sm-3">
+                        5000
+                    </div>
+                    <div  class="col-sm-3">
+                        (2% off)
+                    </div>
+                    <div class="col-sm-3">
+                            {{p.Price}}  
+                    </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col-sm-6">
+                               <small>  GST APPLICABLE:</small>     
+                            </div>
+                            <div class="col-sm-6">
+                                <small>  ₹100.49 (18%)</small>    
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                             <small> FINAL PRICE:</small>    
+                        </div>
+                        <div class="col-sm-6">
+                            <small> ₹658.81 </small>    
+                       </div>    
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                             <small> SHIPPING FEE: </small>    
+                        </div>
+                        <div class="col-sm-6">
+                              <small>   ₹100.00 </small>  
+                        </div>
+                    </div>
+
+                </div>
+             
+            </div>
+
+          </div>
+          <!-- <div class="each-product-cls"  *ngFor="let p of productArr">
+              <img  class="rounded w-100" [src]="p.image" alt="">
+                <span>{{p.pname}}</span>
+          </div> -->
+      </div>
+      <div class ="col-md-4 col-sm-4   offset-sm-1 offset-md-1 ">
+        <div  class="justify-content-center each-item-class" style="padding: 10px;margin:10px;">
+            
+            <h3 style="text-align:center;padding: 10px;    box-shadow: 7px 7px 2px 0px rgba(50, 50, 50, 0.75);
+            " >PRICE SUMMARY</h3>
+       
+       
+       
+       
+       
+       <div  style="text-align:center; padding: 10px">
+                <div class="row">
+                    <div class="col-sm-6">
+                            <h5> Sub Total: </h5>
+                    </div>
+                    <div class="col-sm-6">
+                            <span>2000</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                            <h5> Service Charges: </h5>
+                    </div>
+                    <div class="col-sm-6">
+                            <span>2000</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6" >
+                            <h5> Application Tax On SC:</h5>
+                    </div>
+                    <div class="col-sm-6">
+                            <span>20</span>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                            <h5> Shipping Fee: </h5>           
+                    </div>
+                    <div class="col-sm-6">
+                            <span>2000</span>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                            <h5  style="  font-weight: bold;" > Total Payable  </h5>
+                    </div> 
+                    <div class="col-sm-6">
+                            <span>3000</span>
+                    </div>    
+                </div>
+              
+              
+               
+                <button  class="btn btn-light "  style="background-color: green ; color: honeydew">
+                        PLACE ORDER
+                </button>
+
+                <h5>
+                    <a href="">Add More Chemicals</a>
+                </h5>  
+            </div>
+        </div>
+
+    </div>
+    </div>
+  </div>
+  
